@@ -6,12 +6,8 @@
 </head>
 <body>
 <script>
-  const params = new URLSearchParams(window.location.search);
-
-  if (!params.has("url")) {
-    const currentUrl = window.location.href;
-    window.location.replace("?url=" + encodeURIComponent(currentUrl));
-  }
+  const currentUrl = window.location.href;
+  window.location.replace("?url=" + encodeURIComponent(currentUrl));
 </script>
 </body>
 </html>
